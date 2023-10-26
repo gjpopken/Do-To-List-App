@@ -1,14 +1,15 @@
-let itemList;
+let itemList = [];
 let addButton = document.getElementById("add-button");
 
 function addNewItem(){
-if (document.getElementById("new-item").value != "") {
+    let newItem = document.getElementById("new-item").value;
+if (newItem !== "") {
 console.log("There's something here.");
-let newItem = document.getElementById("new-item").value;
-itemList.shift(newItem);
+itemList.unshift(newItem);
+document.getElementById("new-item").value = "";
 console.log(itemList);
-}
+} else {
 alert("Please add an item to add.");
 }
-
-addButton.addEventListener("click", addNewItem());
+}
+addButton.addEventListener("click", addNewItem);
