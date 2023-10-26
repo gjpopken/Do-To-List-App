@@ -38,7 +38,17 @@ ul li {
     list-style: none;
     cursor: pointer;
     margin: 12px;
+    position: relative;
+}
 
+span {
+    position: absolute;
+    text-align: center;
+    right: 0px;
+    width: 10px;
+}
+span:hover {
+    background-color: red;
 }
 
 ul li:hover {

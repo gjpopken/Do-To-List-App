@@ -11,6 +11,9 @@ console.log("There's something here.");
 let newShownItem = document.createElement("li");
 newShownItem.innerHTML = newItem;
 list.appendChild(newShownItem);
+let span = document.createElement("span");
+span.innerHTML = "\u00d7"; //a value that I got the from tutorial, not sure what it is referencing
+newShownItem.appendChild(span);
 } else {
 alert("Please add an item.");
 }
