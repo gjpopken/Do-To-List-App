@@ -41,6 +41,10 @@ ul li {
     position: relative;
 }
 
+ul li.checked {
+    text-decoration: line-through;
+}
+
 span {
     position: absolute;
     text-align: center;
